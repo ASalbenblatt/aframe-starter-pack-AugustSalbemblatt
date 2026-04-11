@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"> </script>
+  </head>
+  <body>
+    <a-scene>
+      <a-plane rotation="-90 0 0" width="1000" height="1000" color="#6B9569"></a-plane>
+      <a-gltf-model src="Boat-Cart.glb" position="31 1 0" scale="0.7 0.7 0.7"
+      animation="property: position; from: 31 1 -2; to: 31 1 14; dur: 2000; easing: easeInOutQuad; loop: true; dir: alternate"
+      ></a-gltf-model>
+      <a-gltf-model src="Track.glb"></a-gltf-model>
+      <a-sky src="Edited-Background.webp"></a-sky>
+    </a-scene>
+  </body>
+</html>
